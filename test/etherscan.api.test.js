@@ -1,11 +1,11 @@
 const assert = require('assert');
+const api_key = require('address');
 
 let api;
 
 beforeEach(async () => {
 
-	api = await require('etherscan-api')
-		.init('TR9HXEUZ5RXA8WV1FYNZ6WAK8S7RQ65TI7','rinkeby', '3000');
+	api = await require('etherscan-api').init(api_key,'rinkeby', '3000');
 });
 
 describe ('Test etherscan-api interface', ()=> {

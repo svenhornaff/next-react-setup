@@ -15,3 +15,6 @@ package-lock.json
 logs
 *.log
 npm-debug.log*
+
+# private api key's
+address.js
