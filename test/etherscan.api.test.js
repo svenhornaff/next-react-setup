@@ -1,11 +1,10 @@
 const assert = require('assert');
-const api_key = require('address');
+const ETHERSCAN_API_KEY = require('../address');
 
 let api;
 
 beforeEach(async () => {
-
-	api = await require('etherscan-api').init(api_key,'rinkeby', '3000');
+	api = await require('etherscan-api').init(ETHERSCAN_API_KEY,'rinkeby', '3000');
 });
 
 describe ('Test etherscan-api interface', ()=> {
@@ -30,7 +29,6 @@ describe ('Test etherscan-api interface', ()=> {
 		balance.then(function(res){
 			assert.ok(res);
 			done();
-			console.log(res);
 		});
 	});
 
@@ -49,7 +47,6 @@ describe ('Test etherscan-api interface', ()=> {
 		res.then(function(res){
 			assert.ok(res);
 			done();
-			console.log(res);
 		});
 	});
 
@@ -58,7 +55,6 @@ describe ('Test etherscan-api interface', ()=> {
 		res.then(function(res){
 			assert.ok(res);
 			done();
-			console.log(res);
 		});
 	});
 });
