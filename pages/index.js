@@ -5,7 +5,7 @@ class IndexPage extends Component {
 	render () {
 		return (
 			<div>
-				<h3> A page ... with some more information on how to set-up next-react!</h3>
+				<h3> A page !</h3>
 			</div>
 		);
 	}
